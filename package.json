@@ -4,9 +4,9 @@
   "description": "build react with browserify",
   "main": "index.js",
   "scripts": {
-    "build": "browserify --debug index.js > bundle.js",
-    "build-dist": "NODE_ENV=production browserify index | uglifyjs -m > bundle.min.js",
-    "watch": "watchify --debug index.js -o bundle.js"
+    "build": "browserify --debug src/*.js > build/bundle.js",
+    "build-dist": "NODE_ENV=production browserify src/* | uglifyjs -m > build/bundle.min.js",
+    "watch": "watchify --debug src/*.js -o build/bundle.js"
   },
   "keywords": [
     "react",
