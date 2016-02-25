@@ -1,6 +1,13 @@
 # react-browserify
 react + browserify demo
 
+### install
+
+```
+npm install
+```
+
+
 ### build
 
 ```
